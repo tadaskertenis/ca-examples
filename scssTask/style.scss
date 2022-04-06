@@ -1,0 +1,101 @@
+$font: 'Nunito Sans';
+$priceBackground: #f4f6fc;
+$button: #303ca5;
+$textOne: #080f1a;
+$textTwo: #73829e;
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url("assets/fonts/Nunito_Sans/NunitoSans-Light.ttf");
+}
+
+body {
+    font-size: 14pt;
+    font-family: $font;
+}
+
+a {
+    text-decoration: underline dotted;
+    color: inherit;
+    line-height: 1.5em;
+}
+
+button {
+    border-color: $button;
+    border-radius: 0.3em;
+    background-color: white;
+    padding: 1em 2em;
+    margin: 0 auto;
+}
+
+p,
+h5 {
+    font-size: 0.7em;
+}
+
+h6 {
+    margin: 1em 0;
+    color: $textTwo;
+}
+
+.container {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    padding: 1em;
+    border: 1px solid $textTwo;
+    min-width: 200px;
+
+    a {
+        padding-bottom: 0.5em;
+    }
+}
+
+.price {
+    background-color: $priceBackground;
+    border-radius: 4em;
+    padding: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    ;
+
+    &>span {
+        display: flex;
+        font-size: 2em;
+    }
+
+    .euros {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        font-size: 0.7em;
+        text-underline-offset: 4px;
+    }
+}

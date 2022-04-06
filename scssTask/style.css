@@ -1,0 +1,121 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  src: url("assets/fonts/Nunito_Sans/NunitoSans-Light.ttf");
+}
+
+body {
+  font-size: 14pt;
+  font-family: "Nunito Sans";
+}
+
+a {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  color: inherit;
+  line-height: 1.5em;
+}
+
+button {
+  border-color: #303ca5;
+  border-radius: 0.3em;
+  background-color: white;
+  padding: 1em 2em;
+  margin: 0 auto;
+}
+
+p,
+h5 {
+  font-size: 0.7em;
+}
+
+h6 {
+  margin: 1em 0;
+  color: #73829e;
+}
+
+.container {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: center;
+  padding: 1em;
+  border: 1px solid #73829e;
+  min-width: 200px;
+}
+
+.item a {
+  padding-bottom: 0.5em;
+}
+
+.price {
+  background-color: #f4f6fc;
+  border-radius: 4em;
+  padding: 5px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price > span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2em;
+}
+
+.price .euros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.links a {
+  font-size: 0.7em;
+  text-underline-offset: 4px;
+}
+/*# sourceMappingURL=style.css.map */
