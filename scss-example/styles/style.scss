@@ -1,0 +1,37 @@
+@import 'variables';
+
+@mixin centerElements($property, $colorProperty) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $property;
+    background-color: $colorProperty; 
+}
+
+header {
+    @include centerElements(column, bisque);
+    // background-color: bisque;
+
+    button {
+        background-color: $btnBackgroundGreen;
+        color: white;
+    }
+}
+
+.container {
+    @include centerElements(row, rgb(236, 229, 229));
+    height: 90vh;
+
+    button {
+        background-color: $btnBackgroundGreen;
+        color: white;
+    }
+
+    div  {
+        width: 600px / 960px * 100%;
+        background-color: darkcyan;
+        color: white;
+        height: 50px / 200px * 100%;
+        // height: calc(100% - 50px);
+    }
+}
